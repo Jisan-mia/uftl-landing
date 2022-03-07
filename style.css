@@ -531,10 +531,69 @@ main {
   line-height: 1.8rem;
 }
 #whyus .service-item .text-sec p {
-  color: 454545;
+  color: #454545;
   font-size: 14px;
   font-weight: 500;
   margin-top: 5px;
 
 }
 
+/* who we serve or customer */
+
+#customer {
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+  margin-top: 3rem;
+}
+#customer .top {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+#customer .top  h2 {
+  color: #FF6F00;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+}
+#customer .top .desc {
+  color: #454545;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+#customer .services {
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  
+
+}
+#customer .service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.3rem;
+  background: #FFFFFF;
+  box-shadow: 5px 5px 85px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 2rem 2.5rem;
+}
+
+#customer .service-item .img-cont {
+  height: 38px;
+}
+#customer .service-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+}
+#customer .service-item  p {
+  color: #454545;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+
+}
