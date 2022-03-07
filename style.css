@@ -53,6 +53,16 @@ button.btn-outline {
   justify-content: center;
   align-items: center;
 }
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 
 /* navbar design */
 header {
@@ -114,9 +124,65 @@ nav {
 .login-btns {
   gap: 0.85rem;
 }
-.login-btns .call {
+
+/* hero section */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.hero-content .left-side {
+  flex-basis: 50%;
+  gap: 1.3rem;
+}
+
+.hero-content .left-side h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #FFFFFF;
+  background: #454545;
+  display: inline-block;
+  padding: 0 0.9rem;
+}
+.hero-content .left-side h1 {
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #FFFFFF;
+  background: #FF6F00;
+  display: inline-block;
+  padding: 0 0.9rem;
+
 
 }
-.login-btns .call {
-  
+.hero-content  .right-side {
+  flex-basis: 50%;
+}
+.hero-content .order-btns {
+  justify-content: flex-start;
+  gap: 1rem;;
+}
+.hero-content .order-btns .with-small-text {
+  height: 35.63px;
+  width: 140.7px;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.8rem;
+}
+.hero-content .order-btns .with-small-text span {
+
+}
+.hero-content .order-btns .with-small-text {
+  position: relative;  
+}
+.hero-content .order-btns .with-small-text div {
+  position: absolute;
+  top: 8px;
+  left: 30px;
+  line-height: 0.7;
+
+}
+.hero-content .order-btns .with-small-text small {
+  font-size: 8px;
 }
