@@ -503,3 +503,38 @@ main {
   font-weight: 500;
   margin-top: 0.8rem;
 }
+#whyus .services {
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2.5rem;
+}
+#whyus .service-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+#whyus .service-item .img-sec {
+  height: 100px;
+  min-width: 100px;
+  background-color: #F0F0F0;
+  border-radius: 15px;
+  padding: 15px;
+}
+#whyus .service-item .img-cont {
+  height: 50px;
+}
+#whyus .service-item .text-sec h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+#whyus .service-item .text-sec p {
+  color: 454545;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+
+}
+
