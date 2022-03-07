@@ -526,13 +526,13 @@ main {
   height: 50px;
 }
 #whyus .service-item .text-sec h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.8rem;
 }
 #whyus .service-item .text-sec p {
   color: #454545;
-  font-size: 14px;
+  font-size: 13.8px;
   font-weight: 500;
   margin-top: 5px;
 
@@ -587,13 +587,13 @@ main {
   height: 38px;
 }
 #customer .service-item h3 {
-  font-size: 1.3rem;
+  font-size: 1.29;
   font-weight: 600;
   line-height: 1.6rem;
 }
 #customer .service-item  p {
   color: #454545;
-  font-size: 14px;
+  font-size: 13.8px;
   font-weight: 500;
   margin-top: 5px;
 
