@@ -1031,7 +1031,13 @@ main {
 }
 #footer .footer-content .right .contact .img-cont {
   height: 40px;
-  width: 40px;
+  min-width: 40px;
   border-radius: 50%;
   background-color: #FF6F00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footer-content .right .contact .img-cont i {
+  color: #fff;
 }
