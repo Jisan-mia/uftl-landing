@@ -663,3 +663,77 @@ main {
   font-weight: 500;
   margin-top: 5px;
 }
+
+/* explore section */
+#explore {
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+}
+#explore .explore-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+#explore  .explore-img .img-cont {
+}
+#explore .top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+  text-align: left;
+}
+#explore .top  h2 {
+  color: #FF6F00;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+#explore .top  h3 {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+#explore .top .desc {
+  color: #454545;
+  font-size: 16px;
+  font-weight: 500;
+}
+#explore .services {
+  padding-bottom: 5rem;
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.7rem;
+}
+#explore .service-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+#explore .service-item .img-sec {
+  height: 83px;
+  min-width: 83px;
+  background-color: #F0F0F0;
+  border-radius: 15px;
+  padding: 15px;
+}
+#explore .service-item .img-cont {
+  width: 40px;
+}
+#explore .service-item .text-sec h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+#explore .service-item .text-sec p {
+  color: #454545;
+  font-size: 13.8px;
+  font-weight: 500;
+  margin-top: 5px;
+
+}
