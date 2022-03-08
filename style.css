@@ -952,3 +952,86 @@ main {
   padding: 0.7rem 2rem;
   align-self: end;
 }
+
+/* footer section */
+#footer {
+  width: 100%;
+  background:  #F9F9F9;
+  padding: 4rem 0;
+  margin-top: 2rem;
+}
+
+#footer .footer-main {
+
+}
+#footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#footer .footer-content .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+#footer .footer-content .left .img-cont {
+  height: 90px;
+}
+#footer .footer-content .left p {
+  color: #454545;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 450px;
+}
+#footer .footer-content .right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+#footer .footer-content .right ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+#footer .footer-content .right ul a {
+  cursor: pointer;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+#footer .footer-content .right ul a:hover {
+  color: #FF6F00;
+} 
+
+
+#footer .footer-content .right .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-self: center;
+  align-self: center;
+} 
+#footer .footer-content .right .contact a{
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: black;
+}
+#footer .footer-content .right .contact .img-cont {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #FF6F00;
+}
