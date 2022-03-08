@@ -669,11 +669,12 @@ main {
   display: flex;
   flex-direction: column;
   gap:3rem;
+  padding-top: 1.9rem;
 }
 #explore .explore-cont {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
+  gap: 3.8rem;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -735,5 +736,219 @@ main {
   font-size: 13.8px;
   font-weight: 500;
   margin-top: 5px;
+}
 
+
+/* team section */
+
+#team {
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+  margin-top: 3rem;
+}
+#team .top {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+#team .top  h2 {
+  color: #FF6F00;
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+}
+#team .top .desc {
+  color: #454545;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+#team .services {
+  padding-bottom: 5rem;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(191px, 1fr)); */
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#team .service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 5px 5px 85px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 2rem 2.5rem;
+}
+#team .service-item .socials {
+  gap: 0.8rem;
+  margin-top: 10px;
+}
+#team .service-item .socials a{
+  text-decoration: none;
+}
+#team .service-item .socials div {
+  height: 20px;
+}
+
+#team .service-item .img-cont {
+  /* height: 38px; */
+}
+#team .service-item h3 {
+  font-size: 1.19rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  margin-top: 17px;
+}
+#team .service-item  p {
+  color: #FF6F00;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+
+}
+
+/* faq section */
+
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  gap:3rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+#faq .faq-cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3.8rem;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+#faq  .faq-img .img-cont {
+}
+#faq .top {
+  text-align: center;
+}
+#faq .top  h2 {
+  color: #FF6F00;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+#faq .container {
+  /* padding-bottom: 5rem;
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.7rem; */
+}
+
+
+#faq .accordion-container button.accordion {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-weight: 700;
+}
+
+#faq .accordion-container button.accordion:after {
+  content: "+";
+  font-size: 2rem;
+  float: left;
+  margin-right: 10px;
+  color: #FF6F00;
+}
+
+#faq .accordion-container button.accordion.is-open:after {
+  content: "-";
+}
+
+#faq .accordion-container button.accordion:hover,
+#faq .accordion-container button.accordion.is-open {
+  background-color: #fff;
+}
+
+#faq .accordion-container .accordion-content {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+
+#faq .accordion-container .accordion-content p{
+  margin-left: 65px;
+  padding-left: 14px;
+  border-left: 3px solid #FF6F00;
+}
+
+
+/* contact section design */
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 5.8rem;
+}
+#contact .heading h2 {
+  color: #FF6F00;
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+#contact .heading p {
+  color: #454545;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+#contact .form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#contact .form-cont .info-inputs {
+  gap: 1rem;
+  width: 650px;
+}
+#contact .form-cont .info-inputs input, #contact .form-cont .message textarea {
+  outline: none;
+  border: 1.5px solid #FF6F00;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+}
+#contact .form-cont .message {
+  width: 650px;
+}
+#contact .form-cont .message textarea {
+  min-height: 150px
+}
+#contact .form-cont input.btn {
+  padding: 0.7rem 2rem;
+  align-self: end;
 }
