@@ -37,11 +37,11 @@
         </div>
 
         <ul class="nav-lists flex-center">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Why Us?</a></li>
-          <li><a href="#">Who We Serve</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a class="nav_item" href="#">Home</a></li>
+          <li><a class="nav_item" href="#whyus">Why Us?</a></li>
+          <li><a class="nav_item" href="#customer">Who We Serve</a></li>
+          <li><a class="nav_item" href="#product">Products</a></li>
+          <li><a class="nav_item" href="#blog">Blog</a></li>
         </ul>
 
         <div class="login-btns flex-center">
@@ -1181,12 +1181,12 @@
           <div class="right">
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">Why Us?</a></li>
-              <li><a href="#">Who We Serve?</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#whyus">Why Us?</a></li>
+              <li><a href="#customer">Who We Serve?</a></li>
+              <li><a href="#product">Products</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#faq">Terms & Condition</a></li>
               <li><a href="#">Privacy Policy</a></li>
             </ul>
 
@@ -1252,6 +1252,25 @@
 
 
   <script>
+
+    const navItems = document.querySelectorAll('.nav_item')
+
+    navItems.forEach((link) => {
+      link.addEventListener('click', function () {
+        var current = document.getElementsByClassName("active-nav");
+
+        // If there's no active class
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" active-nav", "");
+        }
+
+        // Add the active class to the current/clicked button
+        this.className += " active-nav";
+
+      })
+    })
+
+
 
     const accordionBtns = document.querySelectorAll(".accordion");
     console.log(accordionBtns)
