@@ -412,7 +412,7 @@
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/serve-1.svg" alt="">
           </div>
 
           <h3>Institutional Vehicles</h3>
@@ -422,7 +422,7 @@
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/serve-2.svg" alt="">
           </div>
 
           <h3>Construction Projects</h3>
@@ -433,7 +433,7 @@
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/serve-3.svg" alt="">
           </div>
 
           <h3>Real Estate
@@ -446,7 +446,7 @@
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/serve-4.svg" alt="">
           </div>
 
           <h3>Shopping Mall</h3>
@@ -457,7 +457,7 @@
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/serve-5.svg" alt="">
           </div>
 
           <h3>Factory & Production</h3>
@@ -468,7 +468,7 @@
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/serve-6.svg" alt="">
           </div>
 
           <h3>Hospital & Clinic</h3>
@@ -495,12 +495,12 @@
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/p-1.svg" alt="">
           </div>
 
           <div class="text-sec">
             <h3>Diesel</h3>
-            <p>Available</p>
+            <p><span class="product-availability green"></span><span>Available</span></p>
           </div>
 
         </div>
@@ -508,36 +508,38 @@
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/p-2.svg" alt="">
           </div>
 
           <div class="text-sec">
             <h3>Octane</h3>
-            <p>Coming Soon</p>
+            <p><span class="product-availability"></span>
+              <span>Coming Soon</span>
+            </p>
           </div>
 
         </div>
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/p-3.svg" alt="">
           </div>
 
           <div class="text-sec">
             <h3>IoT Device</h3>
-            <p>Coming Soon</p>
+            <p><span class="product-availability"></span><span>Coming Soon</span></p>
           </div>
 
         </div>
 
         <div class="service-item">
           <div class="img-cont">
-            <img class="img-res" src="./assets/service-1.svg" alt="">
+            <img class="img-res" src="./assets/p-4.svg" alt="">
           </div>
 
           <div class="text-sec">
             <h3>Smart Tank</h3>
-            <p>Coming Soon</p>
+            <p> <span class="product-availability"></span><span>Coming Soon</span></p>
           </div>
 
         </div>
@@ -1273,7 +1275,7 @@
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        console.log(pageYOffset, sectionTop - sectionHeight / 3)
+        // console.log(pageYOffset, sectionTop - sectionHeight / 3)
         if (pageYOffset >= sectionTop - sectionHeight / 3) {
           current = section.getAttribute("id");
         }

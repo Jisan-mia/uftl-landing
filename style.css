@@ -665,6 +665,7 @@ main {
 #products .service-item {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.9rem;
   background: #FFFFFF;
   box-shadow: 5px 5px 85px rgba(0, 0, 0, 0.05);
@@ -673,7 +674,7 @@ main {
 }
 
 #products .service-item .img-cont {
-  width: 38px;
+  height: 45px;
 }
 #products .service-item .text-sec {
   display: flex;
@@ -689,11 +690,26 @@ main {
 }
 #products .service-item .text-sec  p {
   color: #454545;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.26rem;
 }
 
+#products .service-item .text-sec .product-availability {
+  width: 11.5px;
+  height: 11.5px;
+  display: inline-block;
+  background-color: #FF6F00;
+  border-radius: 50%;
+}
+#products .service-item .text-sec .product-availability.green {
+  background: #00C78B;
+
+}
 /* explore section */
 #explore {
   display: flex;
