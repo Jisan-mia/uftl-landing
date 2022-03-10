@@ -37,11 +37,21 @@
         </div>
 
         <ul class="nav-lists flex-center">
-          <li><a class="nav_item" href="#">Home</a></li>
-          <li><a class="nav_item" href="#whyus">Why Us?</a></li>
-          <li><a class="nav_item" href="#customer">Who We Serve</a></li>
-          <li><a class="nav_item" href="#product">Products</a></li>
-          <li><a class="nav_item" href="#blog">Blog</a></li>
+          <li>
+            <a class="nav_item home" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="nav_item whyus" href="#whyus">Why Us?</a>
+          </li>
+          <li>
+            <a class="nav_item customer" href="#customer">Who We Serve</a>
+          </li>
+          <li>
+            <a class="nav_item products" href="#products">Products</a>
+          </li>
+          <li>
+            <a class="nav_item blog" href="#blog">Blog</a>
+          </li>
         </ul>
 
         <div class="login-btns flex-center">
@@ -59,7 +69,7 @@
   <!-- main area -->
   <main>
     <!-- hero section -->
-    <section id="hero" class="container">
+    <section id="home" class="container section">
       <div class="hero-content">
         <div class="left-side flex-vertical">
           <div class="headings">
@@ -270,7 +280,7 @@
 
 
     <!-- why us section -->
-    <section id="whyus" class="container">
+    <section id="whyus" class="container section">
       <div class="top">
         <h2>Why Urgent Fuel?</h2>
         <p class="desc">We always try to provide the best services! You will get the following services once you
@@ -390,7 +400,7 @@
 
 
     <!-- who we serve or customer section -->
-    <section id="customer" class="container">
+    <section id="customer" class="container section">
       <div class="top">
         <h2> Who We Serve?</h2>
         <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, egestas mauris sagittis, nullam
@@ -472,7 +482,7 @@
 
 
     <!-- product section -->
-    <section id="product" class="container">
+    <section id="products" class="container section">
       <div class="top">
         <h2>Our Products</h2>
         <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, egestas mauris sagittis, nullam
@@ -538,7 +548,7 @@
 
     <!-- explore section -->
 
-    <section id="explore" class="container">
+    <section id="explore" class="container section">
 
       <div class="explore-cont">
 
@@ -938,7 +948,7 @@
     </section>
 
     <!-- blog sec -->
-    <section id="blog" class="container">
+    <section id="blog" class="container section">
 
       <div class="blog-top">
         <h2>Blogs</h2>
@@ -1253,22 +1263,45 @@
 
   <script>
 
+    const sections = document.querySelectorAll('.section');
+
+
     const navItems = document.querySelectorAll('.nav_item')
 
-    navItems.forEach((link) => {
-      link.addEventListener('click', function () {
-        var current = document.getElementsByClassName("active-nav");
-
-        // If there's no active class
-        if (current.length > 0) {
-          current[0].className = current[0].className.replace(" active-nav", "");
+    window.addEventListener('scroll', () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        console.log(pageYOffset, sectionTop - sectionHeight / 3)
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id");
         }
+      });
+      console.log(current)
 
-        // Add the active class to the current/clicked button
-        this.className += " active-nav";
-
-      })
+      navItems.forEach((li) => {
+        li.classList.remove("active-nav");
+        if (li.classList.contains(current)) {
+          li.classList.add("active-nav");
+        }
+      });
     })
+
+    // navItems.forEach((link) => {
+    //   link.addEventListener('click', function () {
+    //     var current = document.getElementsByClassName("active-nav");
+
+    //     // If there's no active class
+    //     if (current.length > 0) {
+    //       current[0].className = current[0].className.replace(" active-nav", "");
+    //     }
+
+    //     // Add the active class to the current/clicked button
+    //     this.className += " active-nav";
+
+    //   })
+    // })
 
 
 
