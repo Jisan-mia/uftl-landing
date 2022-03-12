@@ -1,4 +1,4 @@
-## Urgent fule company landing site
+## Urgent fuel company landing site
 ### Home demo
 ![homepage](https://user-images.githubusercontent.com/61211600/158023695-d76b0070-d11b-4328-9bd7-284c51c639c3.PNG)
 ### How to order
