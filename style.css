@@ -80,10 +80,14 @@ header {
   top: 0;
   z-index: 99999;
 }
-
+header .header_inner {
+  width: 100%;
+  position: relative;
+}
 nav {
   max-width:  1180px;
   margin: 0 auto;
+
 }
 
 .brand {
@@ -167,6 +171,13 @@ main {
   margin-top: 93px;
 }
 /* hero section */
+#home {
+  margin-top: 8rem;
+}
+.hamburger i{
+  color: #F8962C;
+  cursor: pointer;
+}
 .hero-content {
   display: grid;
   grid-template-columns: 2fr 1.5fr;
@@ -1324,8 +1335,35 @@ main {
   .container {
     padding: 0 2rem;
   }
-  .nav-lists {
+  ul.nav-lists {
     display: none;
+    
+  }
+  ul.show-navList {
+    display: grid;
+    grid-template-columns: 1fr;
+    width:100%;
+    background-color: #fff;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.692);
+    animation: slide 0.5s ease-in-out;
+    transition: all 0.25s ease-in;
+  }
+  @keyframes slide {
+      0% {
+        left: -600px
+      }
+      100% { left: 0; }
+  }
+
+
+
+  ul.nav-lists li a {
+    /* display: block; */
   }
   nav {
     padding: 0 1rem;
@@ -1380,4 +1418,5 @@ main {
     align-items: baseline;
     gap: 0.75rem;
   }
+  
 }

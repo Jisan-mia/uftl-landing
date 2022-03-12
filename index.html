@@ -24,46 +24,54 @@
 <body>
   <!-- header sec -->
   <header>
-    <nav>
-      <div class="nav-inner">
-        <div class="brand flex-center">
-          <div class="img-cont">
-            <img src="/assets/logo.svg" alt="Logo">
+    <section class="header_inner">
+      <nav>
+        <div class="nav-inner">
+          <div class="brand flex-center">
+            <div class="img-cont">
+              <img src="/assets/logo.svg" alt="Logo">
+            </div>
+            <h3>
+              Urgent <br />
+              Fuel
+            </h3>
           </div>
-          <h3>
-            Urgent <br />
-            Fuel
-          </h3>
-        </div>
 
-        <ul class="nav-lists flex-center">
-          <li>
-            <a class="nav_item home" href="#home">Home</a>
-          </li>
-          <li>
-            <a class="nav_item whyus" href="#whyus">Why Us?</a>
-          </li>
-          <li>
-            <a class="nav_item customer" href="#customer">Who We Serve</a>
-          </li>
-          <li>
-            <a class="nav_item products" href="#products">Products</a>
-          </li>
-          <li>
-            <a class="nav_item blog" href="#blog">Blog</a>
-          </li>
-        </ul>
+          <ul class="nav-lists flex-center">
+            <li>
+              <a class="nav_item home" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="nav_item whyus" href="#whyus">Why Us?</a>
+            </li>
+            <li>
+              <a class="nav_item customer" href="#customer">Who We Serve</a>
+            </li>
+            <li>
+              <a class="nav_item products" href="#products">Products</a>
+            </li>
+            <li>
+              <a class="nav_item blog" href="#blog">Blog</a>
+            </li>
+          </ul>
 
-        <div class="login-btns flex-center">
-          <button class="call btn btn-outline">
-            <i class="fa-solid fa-phone"></i>
-          </button>
-          <button class="btn">
-            Login
-          </button>
+          <div class="login-btns flex-center">
+            <button class="call btn btn-outline">
+              <i class="fa-solid fa-phone"></i>
+            </button>
+            <button class="btn">
+              Login
+            </button>
+
+            <div class="hamburger">
+              <i id="hamburger" class="fa-solid fa-bars fa-2x"></i>
+            </div>
+          </div>
+
+
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
   </header>
 
   <!-- main area -->
@@ -1269,9 +1277,12 @@
   <script>
 
     const sections = document.querySelectorAll('.section');
-
-
     const navItems = document.querySelectorAll('.nav_item')
+    const hamburger = document.querySelector('#hamburger')
+    const navLists = document.querySelector('.nav-lists')
+    hamburger.addEventListener('click', () => {
+      navLists.classList.toggle('show-navList')
+    })
 
     window.addEventListener('scroll', () => {
       let current = "";
@@ -1311,7 +1322,7 @@
 
 
     const accordionBtns = document.querySelectorAll(".accordion");
-    console.log(accordionBtns)
+    // console.log(accordionBtns)
 
     accordionBtns.forEach((accordion) => {
       accordion.onclick = function () {
