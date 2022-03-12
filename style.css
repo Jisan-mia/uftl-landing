@@ -91,6 +91,8 @@ nav {
 }
 
 .brand {
+  text-decoration: none;
+  cursor: pointer;
   gap: 0.2rem;
   margin: 0.3rem 0;
 }
