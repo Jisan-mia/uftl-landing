@@ -470,6 +470,9 @@ main {
 
 
 /* web feature */
+#web-feature {
+  position: relative;
+}
 #web-feature .top-sec{
   display: flex;
   flex-direction: column;
@@ -521,8 +524,11 @@ main {
 }
 #web-feature .bottom-sec {
   height: 100%;
-  position: relative;
-  top: -300px;
+  position: absolute;
+  top: 60%;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* why us? section */
@@ -531,6 +537,7 @@ main {
   flex-direction: column;
   gap:3rem;
   padding-top: 4rem;
+  margin-top: 24rem;
 }
 #whyus .top {
   max-width: 540px;
@@ -1420,7 +1427,7 @@ main {
     white-space: nowrap;
   }
   #web-feature .bottom-sec{
-    top: -105px;
+    /* top: -105px; */
   }
   #web-feature .top-sec {
     padding-bottom: 9rem;
@@ -1447,6 +1454,10 @@ main {
   }
   #footer .footer-content .right .contact .img-cont i{
     font-size: 0.9rem;
+  }
+
+  #whyus {
+    margin-top: 14rem;
   }
   
 }
