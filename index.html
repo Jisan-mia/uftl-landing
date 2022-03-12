@@ -1285,6 +1285,10 @@
     })
 
     window.addEventListener('scroll', () => {
+      if (navLists.classList.contains('show-navList')) {
+        navLists.classList.remove('show-navList')
+      }
+
       let current = "";
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;

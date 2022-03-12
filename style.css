@@ -174,6 +174,9 @@ main {
 #home {
   margin-top: 8rem;
 }
+.hamburger {
+  display: none;
+}
 .hamburger i{
   color: #F8962C;
   cursor: pointer;
@@ -1335,9 +1338,11 @@ main {
   .container {
     padding: 0 2rem;
   }
+  .hamburger {
+    display: inline-block;
+  }
   ul.nav-lists {
     display: none;
-    
   }
   ul.show-navList {
     display: grid;
@@ -1350,7 +1355,7 @@ main {
     right: 0;
     padding: 2rem;
     border-bottom: 1px solid rgba(211, 211, 211, 0.692);
-    animation: slide 0.5s ease-in-out;
+    animation: slide 0.5s ease-out;
     transition: all 0.25s ease-in;
   }
   @keyframes slide {
@@ -1359,6 +1364,12 @@ main {
       }
       100% { left: 0; }
   }
+  @keyframes slideOut {
+    0% {
+      left: 0
+    }
+    100% { left: -600px; }
+}
 
 
 
@@ -1389,11 +1400,13 @@ main {
     margin-left: 1rem;
     margin-right: 1rem
   }
-
+  #contact form.form-cont {
+    width: 100%;
+  }
   #team .services {
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(131px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     align-items: stretch;
     gap: 1rem;
 
@@ -1417,6 +1430,21 @@ main {
     flex-direction: column-reverse;
     align-items: baseline;
     gap: 0.75rem;
+  }
+
+  #footer .footer-content .left p, #footer .footer-content .right ul a, #footer .footer-content .right .contact a span {
+    font-size: small;
+    font-weight: 500;
+  }
+  #footer .footer-content .right .contact a {
+    gap: 0.9rem;
+  }
+  #footer .footer-content .right .contact .img-cont {
+    height: 35px;
+    min-width: 35px;
+  }
+  #footer .footer-content .right .contact .img-cont i{
+    font-size: 0.9rem;
   }
   
 }
