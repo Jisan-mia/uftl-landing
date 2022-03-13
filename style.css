@@ -17,10 +17,11 @@ html {
   outline: none;
   cursor: pointer;
   background: linear-gradient(90deg, #F8962C 0%, #EF3C26 100%);
-  border-radius: 5px;
   font-size: 1rem;
   color: #FFFFFF;
   padding: 0.52rem 1.45rem;
+  border-radius: 10px;
+  font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
 
@@ -75,7 +76,7 @@ button.btn-outline {
 header {
   width: 100%;
   background: #FFFFFF;
-  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 14px rgba(126, 126, 126, 0.12);;
   position: fixed;
   top: 0;
   z-index: 99999;
@@ -94,7 +95,7 @@ nav {
   text-decoration: none;
   cursor: pointer;
   gap: 0.2rem;
-  margin: 0.3rem 0;
+  margin:0.6rem 0;
 }
 .brand h3 {
   font-weight: 600;
@@ -105,8 +106,8 @@ nav {
   font-size: 1.12rem;
 }
 .brand .img-cont {
-  width: 50px;
-  height: 55px; 
+  /* width: 50px; */
+  height: 40px; 
 }
 .brand .img-cont img {
   width: 100%;
@@ -133,6 +134,7 @@ nav {
   font-weight: 500;
   position: relative;
   padding-bottom: 0.18rem;
+  font-size: 0.9em;
 }
 .nav-lists li a:hover{
   color: #FF6F00
@@ -1460,4 +1462,290 @@ main {
     margin-top: 14rem;
   }
   
+}
+
+@media (max-width: 420px) {
+  .btn {
+    padding: 0.4rem 1.15rem;
+  }
+  .login-btns {
+    gap: 0.5em;
+  }
+  .hamburger i.fa-2x {
+    font-size: 1.8em !important;
+  }
+
+  .hero-content .left-side h2 {
+    font-size: 2.1rem;
+    line-height: 3rem;
+    padding: 0 0.69rem;
+  }
+
+  .hero-content .left-side h1 {
+    font-size: 2.6rem;
+    line-height: 3.7rem;
+    padding: 0 0.69rem;
+}
+.hero-content .left-side h3 {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+
+.hero-content .left-side p {
+  font-size: 15px;
+    line-height: 20px;
+}
+
+.order-content .left-side h2 {
+  font-size: 2em;
+  line-height: 1.15em;
+}
+
+.order-content .left-side h3 {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.order-content .left-side p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #454545;
+}
+
+#web-feature .top-sec {
+  padding-bottom: 9rem;
+}
+#web-feature .top-sec h2 {
+  font-size: 2em;
+}
+
+
+
+
+#web-feature .top-sec .all-feature {
+  display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem 2.9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#web-feature .bottom-sec {
+  top: 52%;
+}
+
+#whyus {
+  margin-top: 10rem;
+}
+#whyus .top h2 {
+  font-size: 2em;
+  line-height: 2.8rem;
+}
+#whyus .top .desc {
+  font-size: 12px;
+  margin-top: 0.8rem;
+}
+
+#whyus .services {
+  padding-bottom: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+#whyus .service-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+#whyus .service-item .img-sec {
+  height: 77px;
+  min-width: 77px;
+  background-color: #F0F0F0;
+  border-radius: 15px;
+  padding: 15px;
+}
+#whyus .service-item .img-cont {
+  height: 37px;
+}
+#whyus .service-item .text-sec h3 {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+#whyus .service-item .text-sec p {
+  font-size: 11.8px;
+  margin-top: 5px;
+}
+#customer .top h2, #products .top h2, #team .top h2, #blog .blog-top h2, #faq .top h2 , #contact .heading h2{
+  font-size: 2em;
+  line-height: 2.8rem;
+}
+#customer .top .desc, #products .top .desc, #team .top .desc, #blog .blog-top .desc , #blog .blog-container .blog-item p, #contact .heading p{
+  font-size: 12px;
+}
+
+
+#explore .explore-cont {
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  gap: 3.8rem;
+}
+
+#explore .services {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+#explore .top h3 {
+  font-size: 1.5em;
+}
+#explore .top h2 {
+  font-size: 2em;
+}
+#explore .top .desc {
+  font-size: 15px;
+}
+
+#explore .service-item .img-sec {
+  height: 77px;
+  min-width: 77px;
+}
+
+#explore .service-item .img-cont {
+  width: 37px;
+}
+
+#explore .service-item .text-sec h3 {
+  font-size: 1em;
+  line-height: 1.8rem;
+}
+#explore .service-item .text-sec p {
+  font-size: 11.8px;
+  margin-top: 0;
+}
+
+#testimonial .blog-top h2 {
+  font-size: 2em;
+  line-height: 2.4rem;
+}
+#testimonial .blog-top .desc {
+  font-size: 12px;
+}
+#testimonial .blog-container .blog-item {
+  margin-top: 4rem;
+  padding: 2em 1em ;
+}
+
+#team .services {
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+}
+
+#team .service-item {
+  padding: 2.5rem 2.5rem
+}
+#team .service-item h3 {
+  font-size: 1.3em;
+  line-height: 1.6rem;
+}
+
+#team .service-item p {
+  font-size: 12px;
+}
+
+#blog .blog-container .blog-item {
+  gap: 1.2em;
+}
+#blog .blog-container .blog-item h2 {
+  font-size: 1.2em;
+}
+
+
+
+#faq .faq-cont {
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+
+#faq .accordion-container button.accordion {
+  padding: 15px 8px;
+  font-size: 16px;
+}
+#faq .accordion-container .accordion-content p {
+  margin-left: 48px;
+  padding-left: 12px;
+  font-size: 14px;
+}
+
+#footer .footer-content, #footer .footer-content .right {
+  grid-template-columns: 1fr;
+}
+#footer .footer-content .left .img-cont {
+  height: 60px;
+}
+#footer .footer-content .left p {
+  font-size: 12px;
+    line-height: 18px;
+}
+
+.brand {
+  margin: 0.5rem 0;
+}
+ul.show-navList {
+  top: 56px;
+}
+
+
+
+#footer .bottom .main-socials .img-cont {
+  width: 32px;
+}
+#footer .bottom button.btn {
+  padding: 0.7rem 1.5em;
+  font-size: 1em;
+  margin-bottom: 0.6rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
