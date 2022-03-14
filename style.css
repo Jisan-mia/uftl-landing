@@ -10,10 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #EF3C26;
-}
-
 
 /* general */
 
@@ -40,7 +36,7 @@ button.btn-outline {
 .btn:hover {
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
-    box-shadow: 0 7px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 5px 85px 0px #0000000D;
 }
 
 .btn:active {
@@ -702,9 +698,15 @@ main {
     justify-content: space-between;
     gap: 1.3rem;
     background: #FFFFFF;
-    box-shadow: 5px 5px 85px rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 85px 0px #0000000D;
     border-radius: 15px;
     padding: 2rem 2.5rem;
+    cursor: pointer;
+}
+
+#customer .service-item:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in;
 }
 
 #customer .service-item .img-cont {
@@ -712,16 +714,16 @@ main {
 }
 
 #customer .service-item h3 {
-    font-size: 1.29;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     line-height: 1.6rem;
+    color: rgb(51, 51, 51);
 }
 
 #customer .service-item p {
-    color: #454545;
+    color: #797979;
     font-size: 13.8px;
     font-weight: 500;
-    margin-top: 5px;
 }
 
 
@@ -756,20 +758,31 @@ main {
 
 #products .services {
     padding-bottom: 5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); */
     gap: 1.5rem;
 }
 
 #products .service-item {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 0.9rem;
     background: #FFFFFF;
     box-shadow: 5px 5px 85px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     padding: 2.2rem 1.9rem;
+    cursor: pointer;
+    width: 240px;
+}
+
+#products .service-item:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in;
 }
 
 #products .service-item .img-cont {
@@ -888,12 +901,13 @@ main {
 
 #explore .service-item .text-sec h3 {
     font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.8rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    color: rgb(51, 51, 51);
 }
 
 #explore .service-item .text-sec p {
-    color: #454545;
+    color: #797979;
     font-size: 13.8px;
     font-weight: 500;
     margin-top: 5px;
@@ -1073,7 +1087,7 @@ main {
 
 #team .service-item h3 {
     font-size: 1.19rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.6rem;
     margin-top: 17px;
 }
@@ -1798,5 +1812,12 @@ main {
         padding: 0.7rem 1.5em;
         font-size: 1em;
         margin-bottom: 0.6rem;
+    }
+}
+
+@media (max-width: 584px) {
+    #products .service-item {
+        width: 95vw;
+        justify-content: center;
     }
 }
