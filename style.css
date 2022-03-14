@@ -569,16 +569,21 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+  background: #FFFFFF;
+  box-shadow: 5px 5px 85px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding:  0.8rem;
 }
 #whyus .service-item .img-sec {
-  height: 100px;
-  min-width: 100px;
-  background-color: #F0F0F0;
+  height: 90px;
+  min-width: 90px;
+  background: #FFF0E4;
+  border-radius: 36.089px;
   border-radius: 15px;
   padding: 15px;
 }
 #whyus .service-item .img-cont {
-  height: 50px;
+  height: 43px;
 }
 #whyus .service-item .text-sec h3 {
   font-size: 1.25rem;
@@ -642,7 +647,8 @@ main {
   height: 38px;
 }
 #customer .service-item h3 {
-  font-size: 1.29;
+  font-size: 1.38rem;
+  color:  #454545;
   font-weight: 600;
   line-height: 1.6rem;
 }
@@ -1404,8 +1410,12 @@ main {
     width: 100%;
   }
   .order-content {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
   }
   #testimonial .blog-container .blog-item {
     margin-left: 1rem;
