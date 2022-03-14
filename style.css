@@ -727,9 +727,9 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.26rem;
+gap: 0.26rem;
 }
-
+  
 #products .service-item .text-sec .product-availability {
   width: 11.5px;
   height: 11.5px;
