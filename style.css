@@ -395,9 +395,10 @@ main {
 }
 
 .order-content .left-side p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
-    color: #454545;
+    font-weight: 500;
+    color: #707070;
 }
 
 .order-content .left-side .order-steps {}
@@ -571,7 +572,7 @@ main {
 
 #web-feature .top-sec .feature span {
     color: #454545;
-    font-weight: 500;
+    font-weight: 700;
     font-weight: 1rem;
 }
 
@@ -1211,7 +1212,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3.8rem;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     align-content: center;
 }
 
@@ -1637,7 +1638,6 @@ main {
         line-height: 1.2em;
     }
     .order-content .left-side p {
-        font-size: 12px;
         line-height: 16px;
         color: #454545;
     }
